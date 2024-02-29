@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-grey: #1b1b32;
+    --light-grey: #f5f6f7;
+    --black: #000;
+    --white: #fff;
+    --grey: #3b3b4f;
+    --golden-yellow: #fecc4c;
+    --yellow: #ffcc4c;
+    --gold: #feac32;
+    --orange: #ffac33;
+    --dark-orange: #f89808;
+}
+
+
+li {
+    font-family: "Quicksand", sans-serif;
+}
+a {
+    text-decoration: none !important;
+}
+p,
+h4 {
+    font-family: "Dosis", sans-serif;
+}
+h2 {
+    font-family: Bebas Neue;
+}
+h3 {
+    font-family: "Urbanist", sans-serif;
+}
+.marca {
+    font-family: "Vast Shadow", serif;
+    font-size: small;
+}
+
+footer {
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+}
+
+@media (max-width: 767px){
+    #myCarousel {
+        display: none;
+    }
+}

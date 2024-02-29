@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Páginas que Vuelan</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="container-fluid bg-dark sticky-top">
+        <!-- Logo y botones Acceso/Registro -->
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1 border-bottom bg-dark container-fluid">
+            <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-flex link-body-emphasis text-decoration-none align-items-center">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEUlEQVR4nO2cy6tVZRiHV6LklRwIYiSaf0BYJyOvB8HrIFTIpDqVIO0GFSoYopNKHFTkBTwODjiwI5qplKNuGl0GwhkIeSmhCAQFjwNvgZipPfKyfxsO2/Wutdd27XOO9j6wJ5u9vu/3Pmt961uD9e4kCYIgCAYfwGygArwOLAcWAHOAZ4AJySDFsinjHGVerhqsltllTNBFNjeAM8A3QCewCpgKDCulwuxsw4CnNWenMpxRpiy6+kOMxz9AD/ARMB8YUUKWERrrY41tczRD6WL2ALuAQ8BR4CRwrcEwdha/06U8vsD844G3dGzelVDjmrIdVdZdyt4yMW3Ob8YBzwGvAVuBn3KE3QZ+0O9Hpow3SveDH4E7GeNc1W+2AB3KMM7J2NbvYtIAhgBPAauBw8DfGcV9CkzSZ4u+866EwxrTxn6kQJ7BIaYeYDjwArAbuJxS9C196rmsY+zYR5MmaVqMlkOlfjujJDEpu8ki4HPgZooM+24fsLCs3c0T0+dxpJK6DDMO7CpbTMrNtbvPHN1Fbs4F5mmuvoESY+hs1agkLSDEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIGSEx78uC+nNjeSjE1rgBngePAl8B2va1t7+4+0d9ibE5gMbBGWb5StrPKWk/LxORxSQ0OH6pXaExZYmwsvRi9Sf0INldRShHToYPtxeSDwBHgGPBrgVD2pvf3wLvWL1BUDDBZxx5x3iRP45IyHtNxB1WD1dJx32LyAMaqk+xFYKOW1rmc0Bb4/ZqkNDGS8QFwImesc5pzgzJYlrEF8rdGjAfwOLBUnWd/OkVZy823wN4+3+1Vb5LXjvMHsANYUkbrYVExPcB6nclXVeA8YBowERjaRIApWg6/5PQgpcn7GXgHeLKJeYcq8zTVsEw1VVRjTxExeVgj1nmt3wPAJ8AbwLPWhNXg1bQWOJ0xxyntMrlXhRq/bO6VynJA2c4ra6Pct5i8M/yX1v06YJb1KmUUNUOF1PqVvgCm5/RF2pjvaVu2uf6jHFLFjJScNmCuLjtryV2hy84u5c3AZ7rL/57RtVbPTZ1B275npi1FLbUpzlKYpe3Zxvi3wTkt22/KulvZ31YtK1TbPNVaq/ueNsSmoborTQfe1MOVBenNCX1VTVwWbnTKmKOBl4D9DTSjXtCc25TheeCxZLBCdbu1m9xObbneDfe6ni/m6tOt79K4o62+U2Pf80z0wEG1tfAVFX6RxunV8n3Z65B9aKDaYduuM5+27Hr1rGL9ikOS/yNUG0ft2eJrfZb1x98fBEEQJAPIXcSIdWpOZw55AAAAAElFTkSuQmCC"
+                        class="me-2">
+                    <span class="text-white marca fs-5">Páginas que Vuelan</span>
+                </a>
+            </div>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-light me-2 rounded-pill">Acceder</button>
+                <button type="button" class="btn btn btn-light rounded-pill">Registrarse</button>
+            </div>
+        </div>
+        <!-- Login / Sing Up -->
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5" style="display: none;">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form
+                    </h1>
+                    <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls.
+                        Each required form group has a validation state that can be triggered by attempting to submit
+                        the form without completing it.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                        <hr class="my-4">
+                        <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Accesos -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+            <div class="container-fluid">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Productos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Arte
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Ciencias y Matemáticas
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Derecho
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Ficción
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Historia
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Infantil y Juvenil
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Medicina y Salud
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                        Narrativas Ilustradas
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">¿Cómo llegar?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="container" id="marketing">
+            <!-- Libros Recomendados -->
+            <div class="row text-center m-5">
+                <h2 class="mb-4">NUESTROS RECOMENDADOS</h2>
+                <div class="col-lg-4">
+                    <img src="./ASSESTS/images/la_felicidad_rolon.jpg" alt="La Felicidad - Gabriel Rolón" width="150"
+                        height="210">
+                    <h2 class="fw-normal">La Felicidad</h2>
+                    <h4 class="fw-normal">Gabriel Rolón</h4>
+                    <p>AR$ <span class="fw-bold">24.900,00</span></p>
+                    <p class="fs-6 fw-light text-secondary">*Precio válido solo para compras online.</p>
+                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./ASSESTS/images/zensorialmente.jpg"
+                        alt="Zensorialmente, Deja que tu cuerpo sea tu cerebro - Estanislao Bachrach" width="150"
+                        height="210">
+                    <h2 class="fw-normal">Zensorialmente</h2>
+                    <h4 class="fw-normal">Estanislao Bachrach</h4>
+                    <p>AR$ <span class="fw-bold">15.499,00</span></p>
+                    <p class="fs-6 fw-light text-secondary">*Precio válido solo para compras online.</p>
+                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./ASSESTS/images/el_arte_de_disolver_la_angustia.jpg"
+                        alt="El Arte de disolver la angustia - Ezequiel Starobinsky" width="150" height="210">
+                    <h2 class="fw-semibold fs-4 my-2">El Arte de disolver la angustia</h2>
+                    <h4 class="fw-normal">Ezequiel Starobinsky</h4>
+                    <p>AR$ <span class="fw-bold">14.999,00</span></p>
+                    <p class="fs-6 fw-light text-secondary">*Precio válido solo para compras online.</p>
+                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <!-- Info sobre libros -->
+            <div class="row featurette mt-5">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Cuando comenzó el silencio. <span
+                            class="text-body-secondary">Jesse Ball.</span></h2>
+                    <p class="lead">De un dia para el otro, la esposa de Jesse Ball decide dejar de hablarle y ponerle
+                        fin a la buena vida que llevaban juntos. Ese silencio voluntario, enigmatico, ademas del dolor
+                        que le provoca, lo impulsa a viajar a Japon para investigar un caso que conoce por los diarios y
+                        que quizas lo ayude a entender lo que esta viviendo: la historia de un hombre que guardo
+                        silencio hasta las ultimas consecuencias. Esta novela, que le valio a Jesse Ball la consagracion
+                        critica en Estados Unidos, es un juego literario de ejecucion prodigiosa y una reivindicacion de
+                        la originalidad narrativa para volver a conectarnos con la emocion, la verdad y la belleza.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="./ASSESTS/images/cuando_comenzo_el_silencio.jpg"
+                        alt="Cuando comenzó el silencio - Jesse Ball" width="290" height="450">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">La noche de las beguinas. <span
+                            class="text-body-secondary">Aline Kiner.</span></h2>
+                    <p class="lead">En la París del medioevo el poder reside en el puño del monarca y en la sotana del
+                        clero. Salvo en el barrio de Le Marais, donde se alza el gran edificio de piedra del beguinaje
+                        real donde un grupo de mujeres vive sin casamiento ni convento. Subversivas, estudian, se
+                        organizan y trabajan ajenas al dominio de los hombres. La armonía se trastoca con la llegada de
+                        Maheut, una joven de espíritu salvaje que huye de un matrimonio forzado y de un oscuro
+                        franciscano. A su vez, la amenaza persecutoria de la herejía y la Inquisición crece y se cierne
+                        sobre la ciudad, los cimientos del beguinaje tambalean. ¿Podrán estas audaces mujeres conservar
+                        su modo de vida? ¿O será esta la noche de las beguinas? La magnética prosa de Aline Kiner
+                        desborda con inusitada modernidad. Sus heroínas, reales e imaginarias, nos dejan sin aliento. Un
+                        verdadero acto de justicia histórica y literaria.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="./ASSESTS/images/la_noche_de_las_beguinas.jpg"
+                        alt="La noche de las beguinas - Aline Kiner" width="290" height="450">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Los Diálogos. <span class="text-body-secondary">Jorge
+                            Luis Borges y Osvaldo Ferrari.</span></h2>
+                    <p class="lead">En los últimos tres años de su vida, semana tras semana, Jorge Luis Borges mantuvo
+                        inolvidables diálogos con el escritor Osvaldo Ferrari, cincuenta años menor. No fueron
+                        reportajes ni entrevistas sino conversaciones nacidas del placer de tratar temas con los que
+                        ambos, a pesar de la diferencia de edad, tenían afinidades. Este libro recoge, por primera vez,
+                        todas esas conversaciones en una edición definitiva, corregida y revisada, que tuvieron gran
+                        repercusión a lo largo de los años en diferentes formatos y publicaciones.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="./ASSESTS/images/los_dialogos.jpg" alt="Los diálogos - Jorge Luis Borges" width="290"
+                        height="450">
+                </div>
+            </div>
+            <hr class="featurette-divider">
+            <!-- Carrusel de Libros -->
+            <div id="myCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg class="bd-placeholder-img" width="100%" height="30rem" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="30rem" fill="var(--bs-body-bg)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-center d-flex flex-row justify-content-between">
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/este_dolor_no_es_mio.jpg"
+                                        alt="Este dolor no es mio - Mark Wolynn" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal">ESTE DOLOR NO ES MÍO</h3>
+                                    <h4 class="fw-normal">Mark Wolynn</h4>
+                                    <p>AR$ <span class="fw-bold">23.900,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/destroza_este_diario.jpg"
+                                        alt="Destroza este diario - Keri Smith" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal">DESTROZA ESTE DIARIO</h3>
+                                    <h4 class="fw-normal">Keri Smith</h4>
+                                    <p>AR$ <span class="fw-bold">22.900,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/si_lo_haces_lo_creas.jpg"
+                                        alt="Si lo haces, lo creas - Brian Tracy" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal card-title">SI LO HACES, LO CREAS</h3>
+                                    <h4 class="fw-normal card-text">Brian Tracy</h4>
+                                    <p>AR$ <span class="fw-bold">11.199,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="30rem" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="30rem" fill="var(--bs-body-bg)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-center d-flex flex-row justify-content-between">
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/el_poder_de_los_habitos.jpg" alt="El Poder de los Hábitos - Charles Duhigg"
+                                        width="150" height="210" class="img-top align-self-center">
+                                    <h3 class="fw-normal">EL PODER DE LOS HABITOS</h3>
+                                    <h4 class="fw-normal">Charles Duhigg</h4>
+                                    <p>AR$ <span class="fw-bold">24.499,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/la_sociedad_de_la_nieve.jpg"
+                                        alt="La Sociedad de la Nieve - Pablo Vierci" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal">LA SOCIEDAD DE LA NIEVE</h3>
+                                    <h4 class="fw-normal">Pablo Vierci</h4>
+                                    <p>AR$ <span class="fw-bold">23.100,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/el_niño_resentido.jpg" height="210"
+                                        alt="El Niño Resentido - César Gonzales" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal card-title">EL NIÑO RESENTIDO</h3>
+                                    <h4 class="fw-normal card-text">César Gonzales</h4>
+                                    <p>AR$ <span class="fw-bold">10.999,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg class="bd-placeholder-img" width="100%" height="30rem" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="30rem" fill="var(--bs-body-bg)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-center d-flex flex-row justify-content-between">
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/esta_entre_nosotros.jpg"
+                                        alt="Está entre Nosotros - Pablo Seman" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal">ESTÁ ENTRE NOSOTROS</h3>
+                                    <h4 class="fw-normal">Pablo Seman</h4>
+                                    <p>AR$ <span class="fw-bold">14.190,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/el_camino_del_duelo.jpg"
+                                        alt="El camino del Duelo - Miguel Ruiza y Barbara Emrys" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal">EL CAMINO DEL DUELO</h3>
+                                    <h4 class="fw-normal">Miguel Ruiz</h4>
+                                    <p>AR$ <span class="fw-bold">11.800,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                                <div class="card col-lg-3 pt-1">
+                                    <img src="./ASSESTS/images/el_precio_de_la_pasion.jpg"
+                                        alt="El Precio de la Pasión - Gabriel Rolón" width="150" height="210"
+                                        class="img-top align-self-center">
+                                    <h3 class="fw-normal card-title">EL PRECIO DE LA PASIÓN</h3>
+                                    <h4 class="fw-normal card-text">Gabriel Rolón</h4>
+                                    <p>AR$ <span class="fw-bold">12.900,00</span></p>
+                                    <p><a class="btn btn-secondary" href="#">Ver más »</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <hr class="featurette-divider">
+            <!-- Suscripcion a Newslatter -->
+            <section data-store="home-newsletter">
+                <div class="section-newsletter-home bg-dark text-white js-home-newsletter">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6 text-center">
+                                <div class="js-newsletter newsletter">
+                                    <h3 class="m-4 fs-5 font-body font-weight-normal text-uppercase">Newsletter</h3>
+                                    <h2 class="h1 mb-4 js-home-newstetter-title">Recibí todas las ofertas</h2>
+                                    <p class="js-home-newstetter-text">¿Quieres recibir nuestras ofertas? ¡Registrate ya
+                                        mismo y comenzá a disfrutarlas!</p>
+                                    <form class="my-5" method="post" action="" data-store="newsletter-form">
+                                        <div class="input-append">
+                                            <div class="form-group d-flex flex-row">
+                                                <input type="email" id="email"
+                                                    class=" form-control form-control-big me-2 ps-4 rounded-pill"
+                                                    autocorrect="off" autocapitalize="off" name="email"
+                                                    placeholder="Email" aria-label="Email">
+                                                <button class="btn btn-secondary rounded-pill">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Seccion Instagram -->
+            <hr class="featurette-divider">
+            <section class="section-instafeed-home" data-store="home-instagram-feed">
+                <div class="js-instagram-feed my-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <a target="_blank" href="https://instagram.com/mandragora.librosycultura"
+                                    aria-label="Instagram de Mandrágora Libros y Cultura">
+                                    <div
+                                        class="instafeed-title text-dark mb-0 d-flex flex-row align-items-center justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            fill="currentColor" class="bi bi-instagram me-2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                        </svg>
+                                        <h2 class="h1-md instafeed-user mb-0">paginas_que_vuelan</h2>
+                                    </div>
+                                    <div class="js-ig-fallback text-dark">
+                                        <h5 class="font-weight-normal mb-3">Estamos en Instagram</h5>
+                                        <span class="btn btn-outline-dark rounded-pill btn-small px-4">Seguinos</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <!-- Accesos Rapídos -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 m-2 m-lg-5 border-top">
+            <div class="col mb-3">
+                <h5>Categorías</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Productos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacto</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">¿Cómo llegar?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Contactanos</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#"
+                            class="nav-link p-0 text-body-secondary d-flex flex-row align-items-center justify-content-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-whatsapp me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                            +54 9 11 1111 1111
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill me-1" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            +54 9 4444 4444
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope-fill me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                            </svg>
+                            paginasquevuelan@mail.com
+                        </a></li>
+                    <li class="nav-item  mb-2"><a href="#" class="nav-link p-0 text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg>
+                            Calle Falsa 123
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Sigamos conectados</h5>
+                <ul class="nav flex-row">
+                    <li class="nav-item me-3"><a href="#" class="nav-link p-0 text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a></li>
+                    <li class="nav-item me-3"><a href="#" class="nav-link p-0 text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                            </svg>
+                        </a></li>
+                    <li class="nav-item me-3"><a href="#" class="nav-link p-0 text-body-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col mb-3"></div>
+        </div>
+        <div class="divider mb-5"></div>
+        <!-- Medios de Pago y de Envío -->
+        <div class="row pt-5 m-2 m-lg-5 border-top">
+            <div class="col-md-9">
+                <div id="footer-payments-shipping-logos">
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <h4 class="h3">Medios de pago</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                                class="icon-logo lazyloaded" alt="visa" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                                class="icon-logo lazyloaded" alt="mastercard" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                                class="icon-logo lazyloaded" alt="amex" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
+                                class="icon-logo lazyloaded" alt="diners" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_banelco" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_cabal" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_tarjeta-naranja" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_tarjeta-shopping" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                                class="icon-logo lazyloaded" alt="mercadopago" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
+                                class="icon-logo lazyloaded" alt="other" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_argencard" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_cencosud" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
+                                class="icon-logo lazyloaded" alt="pagofacil" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
+                                class="icon-logo lazyloaded" alt="rapipago" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
+                                class="icon-logo lazyloaded" alt="maestro" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
+                                class="icon-logo lazyloaded" alt="visadebit" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/falabella@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/falabella@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_falabella" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png"
+                                class="icon-logo lazyloaded" alt="nativa" width="40" height="25">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
+                                class="icon-logo lazyloaded" alt="ar_cabaldebit" width="40" height="25">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <h4 class="h3">Medios de envío</h4>
+                        </div>
+                        <div class="col-md-8">
+                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
+                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
+                                class="icon-logo lazyloaded" alt="api_2682" width="40" height="25">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Derechos y Logo -->
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-evenly py-4 mt-4 border-top bg-dark text-light text-center">
+            <span class="fs-6 fw-lighter">© 2024 Agustina Velazquez. Todos los derechos reservados.</span>
+            <a class="list-unstyled d-flex text-light align-items-center">
+                <img
+                    class="me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEUlEQVR4nO2cy6tVZRiHV6LklRwIYiSaf0BYJyOvB8HrIFTIpDqVIO0GFSoYopNKHFTkBTwODjiwI5qplKNuGl0GwhkIeSmhCAQFjwNvgZipPfKyfxsO2/Wutdd27XOO9j6wJ5u9vu/3Pmt961uD9e4kCYIgCAYfwGygArwOLAcWAHOAZ4AJySDFsinjHGVerhqsltllTNBFNjeAM8A3QCewCpgKDCulwuxsw4CnNWenMpxRpiy6+kOMxz9AD/ARMB8YUUKWERrrY41tczRD6WL2ALuAQ8BR4CRwrcEwdha/06U8vsD844G3dGzelVDjmrIdVdZdyt4yMW3Ob8YBzwGvAVuBn3KE3QZ+0O9Hpow3SveDH4E7GeNc1W+2AB3KMM7J2NbvYtIAhgBPAauBw8DfGcV9CkzSZ4u+866EwxrTxn6kQJ7BIaYeYDjwArAbuJxS9C196rmsY+zYR5MmaVqMlkOlfjujJDEpu8ki4HPgZooM+24fsLCs3c0T0+dxpJK6DDMO7CpbTMrNtbvPHN1Fbs4F5mmuvoESY+hs1agkLSDEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIGSEx78uC+nNjeSjE1rgBngePAl8B2va1t7+4+0d9ibE5gMbBGWb5StrPKWk/LxORxSQ0OH6pXaExZYmwsvRi9Sf0INldRShHToYPtxeSDwBHgGPBrgVD2pvf3wLvWL1BUDDBZxx5x3iRP45IyHtNxB1WD1dJx32LyAMaqk+xFYKOW1rmc0Bb4/ZqkNDGS8QFwImesc5pzgzJYlrEF8rdGjAfwOLBUnWd/OkVZy823wN4+3+1Vb5LXjvMHsANYUkbrYVExPcB6nclXVeA8YBowERjaRIApWg6/5PQgpcn7GXgHeLKJeYcq8zTVsEw1VVRjTxExeVgj1nmt3wPAJ8AbwLPWhNXg1bQWOJ0xxyntMrlXhRq/bO6VynJA2c4ra6Pct5i8M/yX1v06YJb1KmUUNUOF1PqVvgCm5/RF2pjvaVu2uf6jHFLFjJScNmCuLjtryV2hy84u5c3AZ7rL/57RtVbPTZ1B275npi1FLbUpzlKYpe3Zxvi3wTkt22/KulvZ31YtK1TbPNVaq/ueNsSmoborTQfe1MOVBenNCX1VTVwWbnTKmKOBl4D9DTSjXtCc25TheeCxZLBCdbu1m9xObbneDfe6ni/m6tOt79K4o62+U2Pf80z0wEG1tfAVFX6RxunV8n3Z65B9aKDaYduuM5+27Hr1rGL9ikOS/yNUG0ft2eJrfZb1x98fBEEQJAPIXcSIdWpOZw55AAAAAElFTkSuQmCC">
+                    <p class="text-white marca">Páginas que Vuelan</p>
+            </a>
+        </div>
+    </footer>
+    <script src="./JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
