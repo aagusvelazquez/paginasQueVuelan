@@ -7,38 +7,249 @@
 }
 
 :root {
-    --dark-grey: #1b1b32;
-    --light-grey: #f5f6f7;
-    --black: #000;
-    --white: #fff;
-    --grey: #3b3b4f;
-    --golden-yellow: #fecc4c;
-    --yellow: #ffcc4c;
-    --gold: #feac32;
-    --orange: #ffac33;
-    --dark-orange: #f89808;
+    --bg-dark: #24242c;
+    --bg-medium: #6C747C;
+    --link: #E69C24;
+    --light: #fff;
+    --dark: #000;
 }
-
 
 li {
     font-family: "Quicksand", sans-serif;
 }
+
 a {
     text-decoration: none !important;
+    color: var(--link) !important;
 }
+
 p,
 h4 {
     font-family: "Dosis", sans-serif;
 }
+
 h2 {
     font-family: Bebas Neue;
 }
+
 h3 {
     font-family: "Urbanist", sans-serif;
 }
+
+.nav-item:hover {
+    text-shadow: 0px 0px 15px white;
+}
+
+.dropdown-menu {
+    background-color: var(--light) !important;
+    border: 2px solid var(--link) !important;
+}
+
+.dropdown-menu li a {
+    color: var(--bg-dark) !important;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--link) !important;
+}
+
 .marca {
     font-family: "Vast Shadow", serif;
     font-size: small;
+    color: var(--light);
+}
+
+#login-btn {
+    color: var(--link);
+    border: 1px solid var(--link);
+}
+
+#login-btn:hover {
+    background: linear-gradient(#eabb70, var(--link));
+    color: var(--bg-dark);
+    border: none;
+}
+
+.contentLogin {
+    display: none;
+    margin: 15px auto 5px;
+    padding: 40px;
+    width: 400px;
+    border-radius: 20px;
+    border: 8px solid var(--bg-dark);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    background: var(--bg-dark);
+    color: var(--light);
+}
+
+.contentLogin .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contentLogin .form.signin,
+.contentLogin.signinForm .form.signup {
+    display: none;
+}
+
+.contentLogin.signinForm .form.signin {
+    display: flex;
+}
+
+.contentLogin .form h2 {
+    color: var(--link);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.contentLogin .form .inputBox {
+    position: relative;
+    width: 300px;
+}
+
+.contentLogin .form .inputBox input {
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    background: #6e6e7960;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--link);
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.233),
+        5px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    outline: none;
+}
+
+.contentLogin .form .inputBox span {
+    position: absolute;
+    left: 5px;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Dosis", sans-serif;
+}
+
+.contentLogin .form .inputBox input:valid~span,
+.contentLogin .form .inputBox input:focus~span {
+    color: var(--link);
+    border: 1px solid var(--link);
+    background: var(--bg-dark);
+    transform: translateX(25px) translateY(-7px);
+    font-size: 0.6em;
+    padding: 0 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+}
+
+.contentLogin .form .inputBox input:valid,
+.contentLogin .form .inputBox input:focus {
+    border: 1px solid var(--link);
+}
+
+.contentLogin .form .inputBox svg {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    padding: 2px 0;
+    padding-right: 8px;
+    color: var(--link);
+    border-right: 1px solid var(--link);
+}
+
+.contentLogin .form .inputBox input[type="submit"] {
+    background: var(--link);
+    color: var(--dark);
+    padding: 10px 0;
+    font-family: Bebas Neue;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.35),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.contentLogin .form .inputBox input[type="submit"]:hover {
+    background: var(--dark);
+    color: var(--link);
+    border: var(--dark);
+    box-shadow: -5px -5px 15px rgba(230, 156, 36, 0.4),
+        inset 5px 5px 18px rgba(255, 255, 255, 0.1),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.contentLogin .form p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.contentLogin .form p a {
+    font-weight: 500;
+    color: var(--light);
+}
+
+.col-lg-3 {
+    border: 2px solid var(--link);
+}
+
+.col-lg-3 h4 {
+    color: var(--link);
+}
+
+.col-lg-3 p a {
+    color: var(--dark) !important;
+    background: var(--link);
+}
+
+.col-lg-3 p a:hover {
+    color: var(--link) !important;
+    background: var(--bg-dark);
+}
+
+.featurette-heading span {
+    color: var(--link);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: var(--dark) !important;
+}
+
+.home-newstetter-title {
+    color: var(--link) !important;
+}
+
+.btn-newslatter,
+.btn-instafeed {
+    background: var(--link) !important;
+}
+
+.btn-newslatter:hover {
+    color: var(--dark) !important;
+    background: var(--light) !important;
+}
+
+.instafeed-title:hover {
+    color: var(--link) !important;
+}
+
+.btn-instafeed:hover {
+    background: var(--bg-dark) !important;
+    color: var(--light) !important;
 }
 
 footer {
@@ -46,8 +257,39 @@ footer {
     font-weight: bold;
 }
 
-@media (max-width: 767px){
+.contentFooter a:hover {
+    color: var(--link) !important;
+}
+
+.footer-author span {
+    color: var(--link) !important;
+}
+
+@media (max-width: 767px) {
     #myCarousel {
         display: none;
+    }
+}
+
+@media (max-width: 424px) {
+    .contentLogin {
+        width: auto;
+        margin: 10px;
+        padding: 40px 0px;
+    }
+
+    .contentLogin .form .inputBox {
+        width: auto;
+        margin: 0;
+    }
+
+    .contentLogin .form .inputBox input[type="submit"] {
+        padding: 10px 90px;
+        width: 100%;
+    }
+
+    .contentLogin .form.signup .inputBox input[type="submit"] {
+        padding: 10px 80px;
+        width: 100%;
     }
 }
