@@ -23,16 +23,16 @@
 <body>
     <header class="container-fluid bg-dark sticky-top">
         <!-- Logo -->
-        <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1 border-bottom bg-dark container-fluid">
-            <div class="col-md-3 mb-2 mb-md-0">
-                <a href="#" class="d-flex link-body-emphasis text-decoration-none align-items-center">
+        <section
+            class="logo d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1 border-bottom bg-dark container-fluid">
+            <div class="mb-2 mb-md-0">
+                <a href="#" class="d-flex flex-column flex-md-row link-body-emphasis text-decoration-none align-items-center">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEUlEQVR4nO2cy6tVZRiHV6LklRwIYiSaf0BYJyOvB8HrIFTIpDqVIO0GFSoYopNKHFTkBTwODjiwI5qplKNuGl0GwhkIeSmhCAQFjwNvgZipPfKyfxsO2/Wutdd27XOO9j6wJ5u9vu/3Pmt961uD9e4kCYIgCAYfwGygArwOLAcWAHOAZ4AJySDFsinjHGVerhqsltllTNBFNjeAM8A3QCewCpgKDCulwuxsw4CnNWenMpxRpiy6+kOMxz9AD/ARMB8YUUKWERrrY41tczRD6WL2ALuAQ8BR4CRwrcEwdha/06U8vsD844G3dGzelVDjmrIdVdZdyt4yMW3Ob8YBzwGvAVuBn3KE3QZ+0O9Hpow3SveDH4E7GeNc1W+2AB3KMM7J2NbvYtIAhgBPAauBw8DfGcV9CkzSZ4u+866EwxrTxn6kQJ7BIaYeYDjwArAbuJxS9C196rmsY+zYR5MmaVqMlkOlfjujJDEpu8ki4HPgZooM+24fsLCs3c0T0+dxpJK6DDMO7CpbTMrNtbvPHN1Fbs4F5mmuvoESY+hs1agkLSDEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIGSEx78uC+nNjeSjE1rgBngePAl8B2va1t7+4+0d9ibE5gMbBGWb5StrPKWk/LxORxSQ0OH6pXaExZYmwsvRi9Sf0INldRShHToYPtxeSDwBHgGPBrgVD2pvf3wLvWL1BUDDBZxx5x3iRP45IyHtNxB1WD1dJx32LyAMaqk+xFYKOW1rmc0Bb4/ZqkNDGS8QFwImesc5pzgzJYlrEF8rdGjAfwOLBUnWd/OkVZy823wN4+3+1Vb5LXjvMHsANYUkbrYVExPcB6nclXVeA8YBowERjaRIApWg6/5PQgpcn7GXgHeLKJeYcq8zTVsEw1VVRjTxExeVgj1nmt3wPAJ8AbwLPWhNXg1bQWOJ0xxyntMrlXhRq/bO6VynJA2c4ra6Pct5i8M/yX1v06YJb1KmUUNUOF1PqVvgCm5/RF2pjvaVu2uf6jHFLFjJScNmCuLjtryV2hy84u5c3AZ7rL/57RtVbPTZ1B275npi1FLbUpzlKYpe3Zxvi3wTkt22/KulvZ31YtK1TbPNVaq/ueNsSmoborTQfe1MOVBenNCX1VTVwWbnTKmKOBl4D9DTSjXtCc25TheeCxZLBCdbu1m9xObbneDfe6ni/m6tOt79K4o62+U2Pf80z0wEG1tfAVFX6RxunV8n3Z65B9aKDaYduuM5+27Hr1rGL9ikOS/yNUG0ft2eJrfZb1x98fBEEQJAPIXcSIdWpOZw55AAAAAElFTkSuQmCC"
                         class="me-2 marca">
                     <span class="marca fs-5">Páginas que Vuelan</span>
                 </a>
             </div>
-        </div>
+        </section>
         <!-- Accesos -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
             <div class="container-fluid">
@@ -205,9 +205,9 @@
             </div>
         </div>
         <!-- Contenido Principal -->
-        <div class="content container" id="marketing">
+        <section class="content container" id="marketing">
             <!-- Libros Recomendados -->
-            <div class="row text-center m-3 justify-content-center">
+            <article class="row text-center m-3 justify-content-center">
                 <h2 class="mb-2">NUESTROS RECOMENDADOS</h2>
                 <div class="col-lg-3 rounded-4 mx-4 mb-3 p-3">
                     <img src="./ASSESTS/images/la_felicidad_rolon.jpg" alt="La Felicidad - Gabriel Rolón" width="150"
@@ -229,80 +229,97 @@
                     <p><a class="btn rounded-4" href="./products/zenzorialmente.html">Ver más »</a></p>
                 </div>
                 <div class="col-lg-3 rounded-4 mx-4 mb-3 p-3">
-                    <img src="./ASSESTS/images/el_arte_de_disolver_la_angustia.jpg"
-                        alt="El Arte de disolver la angustia - Ezequiel Starobinsky" width="150" height="210">
-                    <h2 class="fw-semibold fs-4 my-2">El Arte de disolver la angustia</h2>
-                    <h4 class="fw-normal">Ezequiel Starobinsky</h4>
-                    <p>AR$ <span class="fw-bold">14.999,00</span></p>
+                    <img src="./ASSESTS/images/el_poder_de_las_palabras.jpg"
+                        alt="El Poder de las Palabras - Mariano Sigman" width="150" height="210">
+                    <h2 class="fw-normal">El Poder de las Palabras</h2>
+                    <h4 class="fw-normal">Mariano Sigman</h4>
+                    <p>AR$ <span class="fw-bold">21.899,00</span></p>
                     <p class="fs-6 fw-light text-secondary">*Precio válido solo para compras online.</p>
-                    <p><a class="btn rounded-4" href="./products/el_arte_de_disolver_la_angustia.html">Ver más »</a></p>
+                    <p><a class="btn rounded-4" href="">Ver más »</a></p>
                 </div>
-            </div>
+            </article>
             <hr>
             <!-- Info sobre libros -->
-            <div class="row mt-5">
-                <div class="col-md-7">
-                    <a href="./products/cuando_comenzo_el_silencio.html">
-                        <h2 class="fw-normal lh-1">Cuando comenzó el silencio. <span class="text-black">Jesse
-                                Ball.</span>
-                        </h2>
-                    </a>
-                    <p class="lead">De un dia para el otro, la esposa de Jesse Ball decide dejar de hablarle y ponerle
-                        fin a la buena vida que llevaban juntos. Ese silencio voluntario, enigmatico, ademas del dolor
-                        que le provoca, lo impulsa a viajar a Japon para investigar un caso que conoce por los diarios y
-                        que quizas lo ayude a entender lo que esta viviendo: la historia de un hombre que guardo
-                        silencio hasta las ultimas consecuencias. Esta novela, que le valio a Jesse Ball la consagracion
-                        critica en Estados Unidos, es un juego literario de ejecucion prodigiosa y una reivindicacion de
-                        la originalidad narrativa para volver a conectarnos con la emocion, la verdad y la belleza.</p>
+            <article>
+                <div class="row mt-5">
+                    <div class="col-md-7">
+                        <a href="./products/cuando_comenzo_el_silencio.html">
+                            <h2 class="fw-normal lh-1">Cuando comenzó el silencio. <span class="text-black">Jesse
+                                    Ball.</span>
+                            </h2>
+                        </a>
+                        <p class="lead">De un dia para el otro, la esposa de Jesse Ball decide dejar de hablarle y
+                            ponerle
+                            fin a la buena vida que llevaban juntos. Ese silencio voluntario, enigmatico, ademas del
+                            dolor
+                            que le provoca, lo impulsa a viajar a Japon para investigar un caso que conoce por los
+                            diarios y
+                            que quizas lo ayude a entender lo que esta viviendo: la historia de un hombre que guardo
+                            silencio hasta las ultimas consecuencias. Esta novela, que le valio a Jesse Ball la
+                            consagracion
+                            critica en Estados Unidos, es un juego literario de ejecucion prodigiosa y una
+                            reivindicacion de
+                            la originalidad narrativa para volver a conectarnos con la emocion, la verdad y la belleza.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./ASSESTS/images/cuando_comenzo_el_silencio.jpg"
+                            alt="Cuando comenzó el silencio - Jesse Ball" width="290" height="450">
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <img src="./ASSESTS/images/cuando_comenzo_el_silencio.jpg"
-                        alt="Cuando comenzó el silencio - Jesse Ball" width="290" height="450">
+                <hr>
+                <div class="row">
+                    <div class="col-md-7 order-md-2">
+                        <a href="./products/la_noche_de_las_beguinas.html">
+                            <h2 class="fw-normal lh-1">La noche de las beguinas. <span class="text-black">Aline
+                                    Kiner.</span>
+                            </h2>
+                        </a>
+                        <p class="lead">En la París del medioevo el poder reside en el puño del monarca y en la sotana
+                            del
+                            clero. Salvo en el barrio de Le Marais, donde se alza el gran edificio de piedra del
+                            beguinaje
+                            real donde un grupo de mujeres vive sin casamiento ni convento. Subversivas, estudian, se
+                            organizan y trabajan ajenas al dominio de los hombres. La armonía se trastoca con la llegada
+                            de
+                            Maheut, una joven de espíritu salvaje que huye de un matrimonio forzado y de un oscuro
+                            franciscano. A su vez, la amenaza persecutoria de la herejía y la Inquisición crece y se
+                            cierne
+                            sobre la ciudad, los cimientos del beguinaje tambalean. ¿Podrán estas audaces mujeres
+                            conservar
+                            su modo de vida? ¿O será esta la noche de las beguinas? La magnética prosa de Aline Kiner
+                            desborda con inusitada modernidad. Sus heroínas, reales e imaginarias, nos dejan sin
+                            aliento. Un
+                            verdadero acto de justicia histórica y literaria.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="./ASSESTS/images/la_noche_de_las_beguinas.jpg"
+                            alt="La noche de las beguinas - Aline Kiner" width="290" height="450">
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-7 order-md-2">
-                    <a href="./products/la_noche_de_las_beguinas.html">
-                        <h2 class="fw-normal lh-1">La noche de las beguinas. <span class="text-black">Aline Kiner.</span>
-                        </h2>
-                    </a>
-                    <p class="lead">En la París del medioevo el poder reside en el puño del monarca y en la sotana del
-                        clero. Salvo en el barrio de Le Marais, donde se alza el gran edificio de piedra del beguinaje
-                        real donde un grupo de mujeres vive sin casamiento ni convento. Subversivas, estudian, se
-                        organizan y trabajan ajenas al dominio de los hombres. La armonía se trastoca con la llegada de
-                        Maheut, una joven de espíritu salvaje que huye de un matrimonio forzado y de un oscuro
-                        franciscano. A su vez, la amenaza persecutoria de la herejía y la Inquisición crece y se cierne
-                        sobre la ciudad, los cimientos del beguinaje tambalean. ¿Podrán estas audaces mujeres conservar
-                        su modo de vida? ¿O será esta la noche de las beguinas? La magnética prosa de Aline Kiner
-                        desborda con inusitada modernidad. Sus heroínas, reales e imaginarias, nos dejan sin aliento. Un
-                        verdadero acto de justicia histórica y literaria.</p>
+                <hr>
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal lh-1">Los Diálogos. <span>Jorge
+                                Luis Borges y Osvaldo Ferrari.</span></h2>
+                        <p class="lead">En los últimos tres años de su vida, semana tras semana, Jorge Luis Borges
+                            mantuvo
+                            inolvidables diálogos con el escritor Osvaldo Ferrari, cincuenta años menor. No fueron
+                            reportajes ni entrevistas sino conversaciones nacidas del placer de tratar temas con los que
+                            ambos, a pesar de la diferencia de edad, tenían afinidades. Este libro recoge, por primera
+                            vez,
+                            todas esas conversaciones en una edición definitiva, corregida y revisada, que tuvieron gran
+                            repercusión a lo largo de los años en diferentes formatos y publicaciones.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./ASSESTS/images/los_dialogos.jpg" alt="Los diálogos - Jorge Luis Borges" width="290"
+                            height="450">
+                    </div>
                 </div>
-                <div class="col-md-5 order-md-1">
-                    <img src="./ASSESTS/images/la_noche_de_las_beguinas.jpg"
-                        alt="La noche de las beguinas - Aline Kiner" width="290" height="450">
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Los Diálogos. <span>Jorge
-                            Luis Borges y Osvaldo Ferrari.</span></h2>
-                    <p class="lead">En los últimos tres años de su vida, semana tras semana, Jorge Luis Borges mantuvo
-                        inolvidables diálogos con el escritor Osvaldo Ferrari, cincuenta años menor. No fueron
-                        reportajes ni entrevistas sino conversaciones nacidas del placer de tratar temas con los que
-                        ambos, a pesar de la diferencia de edad, tenían afinidades. Este libro recoge, por primera vez,
-                        todas esas conversaciones en una edición definitiva, corregida y revisada, que tuvieron gran
-                        repercusión a lo largo de los años en diferentes formatos y publicaciones.</p>
-                </div>
-                <div class="col-md-5">
-                    <img src="./ASSESTS/images/los_dialogos.jpg" alt="Los diálogos - Jorge Luis Borges" width="290"
-                        height="450">
-                </div>
-            </div>
+            </article>
             <hr>
             <!-- Carrusel de Libros -->
-            <div id="myCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <article id="myCarousel" class="carousel slide my-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <svg class="bd-placeholder-img" width="100%" height="30rem" xmlns="http://www.w3.org/2000/svg"
@@ -424,31 +441,29 @@
                     <span class="carousel-control-next-icon bg-dark rounded-5" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
+            </article>
             <hr>
             <!-- Suscripcion a Newslatter -->
-            <section>
-                <div class="bg-dark text-white">
-                    <div class="container-fluid">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 col-lg-6 text-center">
-                                <div>
-                                    <h3 class="m-4 fs-5 font-weight-normal text-uppercase home-newstetter-title">
-                                        Newsletter</h3>
-                                    <h2 class="h1 mb-4 home-newstetter-title">Recibí todas las ofertas</h2>
-                                    <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya
-                                        mismo y comenzá a disfrutarlas!</p>
-                                    <form class="my-5" action="#">
-                                        <div>
-                                            <div class="form-group d-flex flex-row">
-                                                <input type="email" id="email"
-                                                    class=" form-control form-control-big me-2 ps-4 rounded-pill"
-                                                    autocorrect="off" autocapitalize="off" name="email"
-                                                    placeholder="Email" aria-label="Email">
-                                                <button class="btn btn-newslatter rounded-5">Enviar</button>
-                                            </div>
-                                    </form>
-                                </div>
+            <article class="bg-dark text-white">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6 text-center">
+                            <div>
+                                <h3 class="m-4 fs-5 font-weight-normal text-uppercase home-newstetter-title">
+                                    Newsletter</h3>
+                                <h2 class="h1 mb-4 home-newstetter-title">Recibí todas las ofertas</h2>
+                                <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya
+                                    mismo y comenzá a disfrutarlas!</p>
+                                <form class="my-5" action="#">
+                                    <div>
+                                        <div class="form-group d-flex flex-row">
+                                            <input type="email" id="email"
+                                                class=" form-control form-control-big me-2 ps-4 rounded-pill"
+                                                autocorrect="off" autocapitalize="off" name="email" placeholder="Email"
+                                                aria-label="Email">
+                                            <button class="btn btn-newslatter rounded-5">Enviar</button>
+                                        </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -456,28 +471,25 @@
             </section>
             <!-- Seccion Instagram -->
             <hr>
-            <section class="section-instafeed-home" data-store="home-instagram-feed">
-                <div class="js-instagram-feed my-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <a target="_blank" href="https://instagram.com/"
-                                    aria-label="Instagram de Libros que Vuelan">
-                                    <div
-                                        class="instafeed-title text-dark mb-0 d-flex flex-row align-items-center justify-content-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                            fill="currentColor" class="bi bi-instagram me-2" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                                        </svg>
-                                        <h2 class="h1-md instafeed-user mb-0">paginas_que_vuelan</h2>
-                                    </div>
-                                    <div class="js-ig-fallback text-dark">
-                                        <h5 class="font-weight-normal mb-3">Estamos en Instagram</h5>
-                                        <button class="btn btn-instafeed rounded-4">Seguinos</button>
-                                    </div>
-                                </a>
-                            </div>
+            <article class="my-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a target="_blank" href="https://instagram.com/"
+                                aria-label="Instagram de Libros que Vuelan">
+                                <div class="text-dark mb-0 d-flex flex-row align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-instagram me-2" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
+                                    <h2 class="mb-0">paginas_que_vuelan</h2>
+                                </div>
+                                <div class="text-dark">
+                                    <h5 class="font-weight-normal mb-3">Estamos en Instagram</h5>
+                                    <button class="btn btn-instafeed rounded-4">Seguinos</button>
+                                </div>
+                            </a>
                         </div>
                     </div>
             </section>
@@ -485,7 +497,8 @@
     </main>
     <footer class="contentFooter">
         <!-- Accesos Rapídos -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 m-2 m-lg-5 border-top">
+        <section class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 m-2 m-lg-5 border-top">
+            <!-- Categorias -->
             <div class="col mb-3">
                 <h5>Categorías</h5>
                 <ul class="nav flex-column">
@@ -499,6 +512,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- Contactos -->
             <div class="col mb-3">
                 <h5>Contactanos</h5>
                 <ul class="nav flex-column">
@@ -537,6 +551,7 @@
                         </a></li>
                 </ul>
             </div>
+            <!-- Redes -->
             <div class="col mb-3">
                 <h5>Sigamos conectados</h5>
                 <ul class="nav flex-row">
@@ -564,91 +579,91 @@
                 </ul>
             </div>
             <div class="col mb-3"></div>
-        </div>
+        </section>
         <div class="divider mb-5"></div>
         <!-- Medios de Pago y de Envío -->
-        <div class="row pt-5 m-2 m-lg-5 border-top">
+        <section class="row pt-5 m-2 m-lg-5 border-top">
             <div class="col-md-9">
-                <div id="footer-payments-shipping-logos">
-                    <div class="row mb-4">
-                        <div class="col-md-4">
-                            <h4 class="fs-3">Medios de pago</h4>
-                        </div>
-                        <div class="col-md-8">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
-                                class="icon-logo lazyloaded" alt="visa" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
-                                class="icon-logo lazyloaded" alt="mastercard" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
-                                class="icon-logo lazyloaded" alt="amex" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
-                                class="icon-logo lazyloaded" alt="diners" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_banelco" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_cabal" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_tarjeta-naranja" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_tarjeta-shopping" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
-                                class="icon-logo lazyloaded" alt="mercadopago" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
-                                class="icon-logo lazyloaded" alt="other" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_argencard" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_cencosud" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
-                                class="icon-logo lazyloaded" alt="pagofacil" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
-                                class="icon-logo lazyloaded" alt="rapipago" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
-                                class="icon-logo lazyloaded" alt="maestro" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
-                                class="icon-logo lazyloaded" alt="visadebit" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/falabella@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/falabella@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_falabella" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png"
-                                class="icon-logo lazyloaded" alt="nativa" width="40" height="25">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
-                                class="icon-logo lazyloaded" alt="ar_cabaldebit" width="40" height="25">
-                        </div>
+                <!-- Metodos de Pago -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <h4 class="fs-3">Metodos de pago</h4>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-md-4">
-                            <h4 class="fs-3">Medios de envío</h4>
-                        </div>
-                        <div class="col-md-8">
-                            <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
-                                data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
-                                class="icon-logo lazyloaded" alt="api_2682" width="40" height="25">
-                        </div>
+                    <div class="col-md-8">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                            class="icon-logo lazyloaded" alt="visa" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                            class="icon-logo lazyloaded" alt="mastercard" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                            class="icon-logo lazyloaded" alt="amex" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
+                            class="icon-logo lazyloaded" alt="diners" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_banelco" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_cabal" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_tarjeta-naranja" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_tarjeta-shopping" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
+                            class="icon-logo lazyloaded" alt="mercadopago" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
+                            class="icon-logo lazyloaded" alt="other" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_argencard" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_cencosud" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
+                            class="icon-logo lazyloaded" alt="pagofacil" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
+                            class="icon-logo lazyloaded" alt="rapipago" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
+                            class="icon-logo lazyloaded" alt="maestro" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
+                            class="icon-logo lazyloaded" alt="visadebit" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/falabella@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/falabella@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_falabella" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png"
+                            class="icon-logo lazyloaded" alt="nativa" width="40" height="25">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
+                            class="icon-logo lazyloaded" alt="ar_cabaldebit" width="40" height="25">
+                    </div>
+                </div>
+                <!-- Metodos de envío -->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <h4 class="fs-3">Metodos de envío</h4>
+                    </div>
+                    <div class="col-md-8">
+                        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
+                            data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
+                            class="icon-logo lazyloaded" alt="api_2682" width="40" height="25">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Derechos y Logo -->
-        <div
+        <section
             class="d-flex flex-column flex-sm-row align-items-center justify-content-sm-evenly py-4 mt-4 border-top bg-dark text-light text-center footer-author">
             <span class="fs-6 fw-lighter">© 2024 Agustina Velazquez. Todos los derechos reservados.</span>
             <a class="list-unstyled d-flex text-light align-items-center">
@@ -656,7 +671,7 @@
                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEEUlEQVR4nO2cy6tVZRiHV6LklRwIYiSaf0BYJyOvB8HrIFTIpDqVIO0GFSoYopNKHFTkBTwODjiwI5qplKNuGl0GwhkIeSmhCAQFjwNvgZipPfKyfxsO2/Wutdd27XOO9j6wJ5u9vu/3Pmt961uD9e4kCYIgCAYfwGygArwOLAcWAHOAZ4AJySDFsinjHGVerhqsltllTNBFNjeAM8A3QCewCpgKDCulwuxsw4CnNWenMpxRpiy6+kOMxz9AD/ARMB8YUUKWERrrY41tczRD6WL2ALuAQ8BR4CRwrcEwdha/06U8vsD844G3dGzelVDjmrIdVdZdyt4yMW3Ob8YBzwGvAVuBn3KE3QZ+0O9Hpow3SveDH4E7GeNc1W+2AB3KMM7J2NbvYtIAhgBPAauBw8DfGcV9CkzSZ4u+866EwxrTxn6kQJ7BIaYeYDjwArAbuJxS9C196rmsY+zYR5MmaVqMlkOlfjujJDEpu8ki4HPgZooM+24fsLCs3c0T0+dxpJK6DDMO7CpbTMrNtbvPHN1Fbs4F5mmuvoESY+hs1agkLSDEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIcQoxDiHEIMQ4hxiHEOIQYhxDjEGIGSEx78uC+nNjeSjE1rgBngePAl8B2va1t7+4+0d9ibE5gMbBGWb5StrPKWk/LxORxSQ0OH6pXaExZYmwsvRi9Sf0INldRShHToYPtxeSDwBHgGPBrgVD2pvf3wLvWL1BUDDBZxx5x3iRP45IyHtNxB1WD1dJx32LyAMaqk+xFYKOW1rmc0Bb4/ZqkNDGS8QFwImesc5pzgzJYlrEF8rdGjAfwOLBUnWd/OkVZy823wN4+3+1Vb5LXjvMHsANYUkbrYVExPcB6nclXVeA8YBowERjaRIApWg6/5PQgpcn7GXgHeLKJeYcq8zTVsEw1VVRjTxExeVgj1nmt3wPAJ8AbwLPWhNXg1bQWOJ0xxyntMrlXhRq/bO6VynJA2c4ra6Pct5i8M/yX1v06YJb1KmUUNUOF1PqVvgCm5/RF2pjvaVu2uf6jHFLFjJScNmCuLjtryV2hy84u5c3AZ7rL/57RtVbPTZ1B275npi1FLbUpzlKYpe3Zxvi3wTkt22/KulvZ31YtK1TbPNVaq/ueNsSmoborTQfe1MOVBenNCX1VTVwWbnTKmKOBl4D9DTSjXtCc25TheeCxZLBCdbu1m9xObbneDfe6ni/m6tOt79K4o62+U2Pf80z0wEG1tfAVFX6RxunV8n3Z65B9aKDaYduuM5+27Hr1rGL9ikOS/yNUG0ft2eJrfZb1x98fBEEQJAPIXcSIdWpOZw55AAAAAElFTkSuQmCC">
                 <p class="text-white marca">Páginas que Vuelan</p>
             </a>
-        </div>
+        </section>
     </footer>
     <script src="./JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

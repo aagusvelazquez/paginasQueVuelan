@@ -40,6 +40,7 @@ h5 {
 h3 {
     font-family: "Urbanist", sans-serif;
 }
+
 section {
     margin: 0;
     padding: 0;
@@ -327,6 +328,56 @@ section {
     border-color: var(--link) !important;
 }
 
+.link-products:hover {
+    font-size:large;
+    font-weight: 800;
+}
+
+.cardProduct {
+    width: 280px;
+    height: 430px;
+    overflow: hidden;
+}
+.cardProduct-body {
+    margin-bottom: 1rem;
+}
+
+.cardProduct-title {
+    font-weight: bold;
+    font-size:xx-large;
+    line-height: 35px;
+    margin: 15px 0 5px;
+}
+
+.cardProduct-subtitle {
+    font-weight: bold;
+    color: var(--link);
+}
+
+.cardProduct-btn {
+    background: var(--link) !important;
+    color: var(--dark) !important;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.cardProduct-btn:hover {
+    background: var(--bg-dark) !important;
+    color: var(--link) !important;
+    font-weight: 500;
+}
+
+input:focus,
+select:focus,
+select,
+input.form-control:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
 footer {
     font-family: "Noto Serif", serif;
     font-weight: bold;
@@ -344,12 +395,21 @@ footer {
     #myCarousel {
         display: none;
     }
+
     iframe {
         width: auto;
     }
 }
 
 @media (max-width: 424px) {
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+
     .contentLogin {
         width: auto;
         margin: 10px;
