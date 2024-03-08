@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth
 }
 
 :root {
@@ -69,20 +70,24 @@ section {
     color: var(--light);
 }
 
-#login-btn {
-    color: var(--link);
-    border: 1px solid var(--link);
+#login-btn,
+.btn-cart {
+    color: var(--link) !important;
+    border: 1px solid var(--link) !important;
 }
 
-#login-btn:hover {
+#login-btn:hover,
+.btn-cart:hover {
     background: linear-gradient(#eabb70, var(--link));
-    color: var(--bg-dark);
+    color: var(--bg-dark) !important;
     border: none;
 }
 
 .contentLogin {
-    display: none;
-    margin: 15px auto 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 5px;
     padding: 40px;
     width: 400px;
     border-radius: 20px;
@@ -319,6 +324,9 @@ section {
     background-color: var(--bg-dark);
     color: var(--link);
 }
+.btn-cart span {
+    background-color: var(--link);
+}
 
 .postal-code-btn {
     width: auto;
@@ -333,10 +341,14 @@ section {
     font-weight: 800;
 }
 
+.productCart:hover {
+    background-color: #6c747c64;
+}
+
 .cardProduct {
-    width: 280px;
-    height: 430px;
+    width: 250px;
     overflow: hidden;
+    margin: 5px;
 }
 .cardProduct-body {
     margin-bottom: 1rem;
@@ -347,6 +359,7 @@ section {
     font-size:xx-large;
     line-height: 35px;
     margin: 15px 0 5px;
+    color: var(--dark);
 }
 
 .cardProduct-subtitle {
@@ -354,17 +367,24 @@ section {
     color: var(--link);
 }
 
-.cardProduct-btn {
-    background: var(--link) !important;
-    color: var(--dark) !important;
-    padding: 10px;
-    margin: 20px 0px;
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--link);
+    color: white !important;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 1000;;
 }
 
-.cardProduct-btn:hover {
-    background: var(--bg-dark) !important;
-    color: var(--link) !important;
-    font-weight: 500;
+.scroll-to-top:hover {
+    background: var(--bg-dark);
 }
 
 input:focus,

@@ -32,6 +32,17 @@
                     <span class="marca fs-5">Páginas que Vuelan</span>
                 </a>
             </div>
+            <div class="d-flex flex-nowrap align-items-center justify-content-around">
+                <a href="/pages/login.html" class="mx-2">Acceder</a>
+                <button type="button" class="btn btn-cart position-relative rounded-pill border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-cart" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                    </svg>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">0</span>
+                </button>
+            </div>
         </section>
         <!-- Accesos -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
@@ -50,7 +61,7 @@
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">Productos</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html#arte">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -58,7 +69,7 @@
                                         </svg>
                                         Arte
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -66,7 +77,7 @@
                                         </svg>
                                         Ciencias y Matemáticas
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -74,7 +85,7 @@
                                         </svg>
                                         Derecho
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html#ficcion">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -82,7 +93,7 @@
                                         </svg>
                                         Ficción
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -90,7 +101,7 @@
                                         </svg>
                                         Historia
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -98,7 +109,7 @@
                                         </svg>
                                         Infantil y Juvenil
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html#medicina_y_salud">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -106,7 +117,7 @@
                                         </svg>
                                         Medicina y Salud
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="/pages/products.html">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -117,15 +128,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                            <a class="nav-link" href="/pages/contact.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/address.html">¿Cómo llegar?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a>
-                                <button type="button" class="btn me-2 rounded-pill" id="login-btn">Mi Cuenta</button>
-                            </a>
+                            <a class="nav-link" href="/pages/address.html">¿Cómo llegar?</a>
                         </li>
                     </ul>
                 </div>
@@ -133,77 +139,6 @@
         </nav>
     </header>
     <main>
-        <!-- Login / Sing Up -->
-        <div class="contentLogin signinForm">
-            <div class="form signup">
-                <h2>CREAR CUENTA</h2>
-                <div class="inputBox">
-                    <input type="text" required="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-person" viewBox="0 0 16 16">
-                        <path
-                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                    </svg>
-                    <span>nombre completo</span>
-                </div>
-                <div class="inputBox">
-                    <input type="text" required="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path
-                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                    </svg>
-                    <span>correo</span>
-                </div>
-                <div class="inputBox">
-                    <input type="password" required="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-lock-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
-                    </svg>
-                    <span>contraseña</span>
-                </div>
-                <div class="inputBox">
-                    <input type="password" required="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-lock-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
-                    </svg>
-                    <span>confirmar contraseña</span>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" value="Crear Cuenta">
-                </div>
-                <p>¿Ya tienes cuenta? <a href="#" class="login">INGRESÁ!</a></p>
-            </div>
-            <div class="form signin">
-                <h2>INICIAR SESIÓN</h2>
-                <div class="inputBox">
-                    <input type="text" required="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-person" viewBox="0 0 16 16">
-                        <path
-                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                    </svg>
-                    <span>correo</span>
-                </div>
-                <div class="inputBox">
-                    <input type="password" required="required">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                        class="bi bi-lock-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
-                    </svg>
-                    <span>contraseña</span>
-                </div>
-                <div class="inputBox">
-                    <input type="submit" value="Ingresar">
-                </div>
-                <p>¿No estás registrado? <a href="#" class="create">CREÁ TU CUENTA!</a></p>
-            </div>
-        </div>
         <!-- Contenido Principal -->
         <section class="content container" id="marketing">
             <!-- Libros Recomendados -->
@@ -375,13 +310,13 @@
                                     <p><a class="btn rounded-4" href="#">Ver más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/la_sociedad_de_la_nieve.jpg"
+                                    <img src="./ASSESTS/images/bibliotecologia_y_museologia/la_sociedad_de_la_nieve.jpg"
                                         alt="La Sociedad de la Nieve - Pablo Vierci" width="150" height="210"
                                         class="img-top align-self-center">
                                     <h3 class="fw-normal">LA SOCIEDAD DE LA NIEVE</h3>
                                     <h4 class="fw-normal">Pablo Vierci</h4>
                                     <p>AR$ <span class="fw-bold">23.100,00</span></p>
-                                    <p><a class="btn rounded-4" href="#">Ver más »</a></p>
+                                    <p><a class="btn rounded-4" href="/products/bibliotecologia_y_museologia/la_sociedad_de_la_nieve.html">Ver más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
                                     <img src="./ASSESTS/images/el_niño_resentido.jpg" height="210"

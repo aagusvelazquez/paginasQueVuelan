@@ -1,40 +1,33 @@
-const loginBtn = document.getElementById("login-btn");
-const homeBtn = document.getElementById("home-btn");
-const loginFrame = document.querySelector(".contentLogin");
-const content = document.querySelector(".content");
-const contentFooter = document.querySelector(".contentFooter");
-const navBarCollapse = document.querySelector(".navbar-collapse");
 const login = document.querySelector(".login");
 const create = document.querySelector(".create");
 const container = document.querySelector(".contentLogin");
 const decrementBtn = document.getElementById("decrement");
 const incrementBtn = document.getElementById("increment");
 const countDisplay = document.getElementById("count");
+const scrollToTopBtn = document.querySelector(".scroll-to-top");
 let count = 0;
 
-loginBtn.addEventListener("click", () => {
-    loginFrame.style.display = "block";
-    content.style.display = "none";
-    contentFooter.style.display = "none";
-    navBarCollapse.classList.remove("show");
-});
+document.addEventListener("DOMContentLoaded", function () {
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-document.addEventListener('click', function (event) {
-    var clicInsideLogin = loginFrame.contains(event.target);
-    var clicOnBotton = (event.target === loginBtn);
-
-    if (!clicInsideLogin && !clicOnBotton) {
-        content.style.display = "block";
-        contentFooter.style.display = "block";
-        loginFrame.style.display = "none";
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
     }
+  }
 });
+
+
 login.onclick = function () {
-    container.classList.add("signinForm");
+  container.classList.add("signinForm");
 };
 
 create.onclick = function () {
-    container.classList.remove("signinForm");
+  container.classList.remove("signinForm");
 };
 
 // Función para actualizar el contador y mostrarlo
@@ -58,3 +51,4 @@ decrementBtn.addEventListener('click', () => {
 
 // Inicializar el contador al cargar la página
 updateCount();
+
