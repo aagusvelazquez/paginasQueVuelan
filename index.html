@@ -2,9 +2,13 @@
 <html lang="es">
 
 <head>
+    <!-- Meta datos -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pagina de venta de libros">
+    <meta name="keywords" content="libros, venta online, libreria, biblioteca">
+    <meta name="author" content="Agustina Velazquez">
     <title>Páginas que Vuelan</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="./CSS/styles.css" />
@@ -46,14 +50,14 @@
             </div>
         </section>
         <!-- Accesos -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
+                    data-bs-target="#navbarIndex" aria-controls="navbarIndex" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse justify-content-md-center collapse" id="navbarsExample08">
+                <div class="navbar-collapse justify-content-md-center collapse" id="navbarIndex">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -78,7 +82,7 @@
                                         </svg>
                                         Bibliotecología y Museología
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#ciencia">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -86,7 +90,7 @@
                                         </svg>
                                         Ciencias y Matemáticas
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#derecho">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -94,7 +98,7 @@
                                         </svg>
                                         Derecho
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#ficcion">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -102,7 +106,7 @@
                                         </svg>
                                         Ficción
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#historia">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -110,7 +114,7 @@
                                         </svg>
                                         Historia
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#infantil">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -118,7 +122,7 @@
                                         </svg>
                                         Infantil y Juvenil
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#medicina">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -126,7 +130,7 @@
                                         </svg>
                                         Medicina y Salud
                                     </a></li>
-                                <li><a class="dropdown-item" href="./pages/products.html">
+                                <li><a class="dropdown-item" href="./pages/products.html#narrativas">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                                             <path
@@ -134,6 +138,14 @@
                                         </svg>
                                         Narrativas Ilustradas
                                     </a></li>
+                                <li><a class="dropdown-item" href="./pages/products.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                    </svg>
+                                    Todos los Productos
+                                </a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -149,12 +161,12 @@
     </header>
     <main>
         <!-- Contenido Principal -->
-        <section class="content container" id="marketing">
+        <section class="content container">
             <!-- Libros Recomendados -->
             <article class="row text-center m-3 justify-content-center">
                 <h2 class="mb-2">NUESTROS RECOMENDADOS</h2>
                 <div class="col-lg-3 rounded-4 mx-4 mb-3 p-3">
-                    <img src="./ASSESTS/images/la_felicidad_rolon.jpg" alt="La Felicidad - Gabriel Rolón" width="150"
+                    <img src="./ASSESTS/images/medicina/la_felicidad_rolon.jpg" alt="La Felicidad - Gabriel Rolón" width="150"
                         height="210">
                     <h2 class="fw-normal">La Felicidad</h2>
                     <h4 class="fw-normal">Gabriel Rolón</h4>
@@ -163,7 +175,7 @@
                     <p><a class="btn rounded-4" href="./products/la_felicidad.html">Ver más »</a></p>
                 </div>
                 <div class="col-lg-3 rounded-4 mx-4 mb-3 p-3">
-                    <img src="./ASSESTS/images/zensorialmente.jpg"
+                    <img src="./ASSESTS/images/medicina/zensorialmente.jpg"
                         alt="Zensorialmente, Deja que tu cuerpo sea tu cerebro - Estanislao Bachrach" width="150"
                         height="210">
                     <h2 class="fw-normal">Zensorialmente</h2>
@@ -173,7 +185,7 @@
                     <p><a class="btn rounded-4" href="./products/zenzorialmente.html">Ver más »</a></p>
                 </div>
                 <div class="col-lg-3 rounded-4 mx-4 mb-3 p-3">
-                    <img src="./ASSESTS/images/el_poder_de_las_palabras.jpg"
+                    <img src="./ASSESTS/images/medicina/el_poder_de_las_palabras.jpg"
                         alt="El Poder de las Palabras - Mariano Sigman" width="150" height="210">
                     <h2 class="fw-normal">El Poder de las Palabras</h2>
                     <h4 class="fw-normal">Mariano Sigman</h4>
@@ -188,15 +200,11 @@
                 <div class="row mt-5">
                     <div class="col-md-7">
                         <a href="./products/cuando_comenzo_el_silencio.html">
-                            <h2 class="fw-normal lh-1">Cuando comenzó el silencio. <span class="text-black">Jesse
-                                    Ball.</span>
-                            </h2>
+                            <h2 class="fw-normal lh-1">Cuando comenzó el silencio. <span class="text-black">Jesse Ball.</span></h2>
                         </a>
-                        <p>De un dia para el otro, la esposa de Jesse Ball decide dejar de hablarle y
-                            ponerle
-                            fin a la buena vida que llevaban juntos. Ese silencio voluntario, enigmatico, ademas del
-                            dolor
-                            que le provoca, lo impulsa a viajar a Japon para investigar un caso que conoce por los
+                        <p>De un dia para el otro, la esposa de Jesse Ball decide dejar de hablarle y ponerle fin a la
+                            buena vida que llevaban juntos. Ese silencio voluntario, enigmatico, ademas del
+                            dolor que le provoca, lo impulsa a viajar a Japon para investigar un caso que conoce por los
                             diarios y
                             que quizas lo ayude a entender lo que esta viviendo: la historia de un hombre que guardo
                             silencio hasta las ultimas consecuencias. Esta novela, que le valio a Jesse Ball la
@@ -207,7 +215,7 @@
                         </p>
                     </div>
                     <div class="col-md-5">
-                        <img src="./ASSESTS/images/cuando_comenzo_el_silencio.jpg"
+                        <img src="./ASSESTS/images/ficcion/cuando_comenzo_el_silencio.jpg"
                             alt="Cuando comenzó el silencio - Jesse Ball" width="290" height="450">
                     </div>
                 </div>
@@ -215,9 +223,7 @@
                 <div class="row">
                     <div class="col-md-7 order-md-2">
                         <a href="./products/la_noche_de_las_beguinas.html">
-                            <h2 class="fw-normal lh-1">La noche de las beguinas. <span class="text-black">Aline
-                                    Kiner.</span>
-                            </h2>
+                            <h2 class="fw-normal lh-1">La noche de las beguinas. <span class="text-black">Aline Kiner.</span></h2>
                         </a>
                         <p>En la París del medioevo el poder reside en el puño del monarca y en la sotana
                             del
@@ -237,7 +243,7 @@
                             verdadero acto de justicia histórica y literaria.</p>
                     </div>
                     <div class="col-md-5 order-md-1">
-                        <img src="./ASSESTS/images/la_noche_de_las_beguinas.jpg"
+                        <img src="./ASSESTS/images/ficcion/la_noche_de_las_beguinas.jpg"
                             alt="La noche de las beguinas - Aline Kiner" width="290" height="450">
                     </div>
                 </div>
@@ -245,8 +251,7 @@
                 <div class="row">
                     <div class="col-md-7">
                         <a href="">
-                            <h2 class="featurette-heading fw-normal lh-1">Los Diálogos. <span>Jorge
-                                Luis Borges y Osvaldo Ferrari.</span></h2>
+                            <h2 class="fw-normal lh-1">Los Diálogos. <span class="text-black">Jorge Luis Borges y Osvaldo Ferrari.</span></h2>
                         </a>
                         <p>En los últimos tres años de su vida, semana tras semana, Jorge Luis Borges
                             mantuvo
@@ -258,14 +263,14 @@
                             repercusión a lo largo de los años en diferentes formatos y publicaciones.</p>
                     </div>
                     <div class="col-md-5">
-                        <img src="./ASSESTS/images/los_dialogos.jpg" alt="Los diálogos - Jorge Luis Borges" width="290"
+                        <img src="./ASSESTS/images/ficcion/los_dialogos.jpg" alt="Los diálogos - Jorge Luis Borges" width="290"
                             height="450">
                     </div>
                 </div>
             </article>
             <hr>
             <!-- Carrusel de Libros -->
-            <article id="myCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <article id="carruselLibros" class="carousel slide my-5" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <svg class="bd-placeholder-img" width="100%" height="30rem" xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +280,7 @@
                         <div class="container">
                             <div class="carousel-caption text-center d-flex flex-row justify-content-between">
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/este_dolor_no_es_mio.jpg"
+                                    <img src="./ASSESTS/images/medicina/este_dolor_no_es_mio.jpg"
                                         alt="Este dolor no es mio - Mark Wolynn" width="150" height="210"
                                         class="img-top align-self-center">
                                     <h3 class="fw-normal">ESTE DOLOR NO ES MÍO</h3>
@@ -284,7 +289,7 @@
                                     <p><a class="btn rounded-4" href="#">Ver más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/destroza_este_diario.jpg"
+                                    <img src="./ASSESTS/images/infantil/destroza_este_diario.jpg"
                                         alt="Destroza este diario - Keri Smith" width="150" height="210"
                                         class="img-top align-self-center">
                                     <h3 class="fw-normal">DESTROZA ESTE DIARIO</h3>
@@ -293,10 +298,10 @@
                                     <p><a class="btn rounded-4" href="#">Ver más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/si_lo_haces_lo_creas.jpg"
-                                        alt="Si lo haces, lo creas - Brian Tracy" width="150" height="210"
+                                    <img src="./ASSESTS/images/medicina/si_lo_crees_lo_creas.jpg"
+                                        alt="Si lo crees, lo creas - Brian Tracy" width="150" height="210"
                                         class="img-top align-self-center">
-                                    <h3 class="fw-normal card-title">SI LO HACES, LO CREAS</h3>
+                                    <h3 class="fw-normal card-title">SI LO CREES, LO CREAS</h3>
                                     <h4 class="fw-normal card-text">Brian Tracy</h4>
                                     <p>AR$ <span class="fw-bold">11.199,00</span></p>
                                     <p><a class="btn rounded-4" href="#">Ver más »</a></p>
@@ -312,7 +317,7 @@
                         <div class="container">
                             <div class="carousel-caption text-center d-flex flex-row justify-content-between">
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/el_poder_de_los_habitos.jpg"
+                                    <img src="./ASSESTS/images/medicina/el_poder_de_los_habitos.jpg"
                                         alt="El Poder de los Hábitos - Charles Duhigg" width="150" height="210"
                                         class="img-top align-self-center">
                                     <h3 class="fw-normal">EL PODER DE LOS HABITOS</h3>
@@ -328,11 +333,11 @@
                                     <h4 class="fw-normal">Pablo Vierci</h4>
                                     <p>AR$ <span class="fw-bold">23.100,00</span></p>
                                     <p><a class="btn rounded-4"
-                                            href="./products/bibliotecologia_y_museologia/la_sociedad_de_la_nieve.html">Ver
+                                            href="./products/la_sociedad_de_la_nieve.html">Ver
                                             más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/el_niño_resentido.jpg" height="210"
+                                    <img src="./ASSESTS/images/ficcion/el_nino_resentido.jpg" height="210"
                                         alt="El Niño Resentido - César Gonzales" width="150" height="210"
                                         class="img-top align-self-center">
                                     <h3 class="fw-normal card-title">EL NIÑO RESENTIDO</h3>
@@ -351,16 +356,16 @@
                         <div class="container">
                             <div class="carousel-caption text-center d-flex flex-row justify-content-between">
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/esta_entre_nosotros.jpg"
+                                    <img src="./ASSESTS/images/narrativas/el_rey.png"
                                         alt="Está entre Nosotros - Pablo Seman" width="150" height="210"
                                         class="img-top align-self-center">
-                                    <h3 class="fw-normal">ESTÁ ENTRE NOSOTROS</h3>
-                                    <h4 class="fw-normal">Pablo Seman</h4>
-                                    <p>AR$ <span class="fw-bold">14.190,00</span></p>
+                                    <h3 class="fw-normal">EL REY</h3>
+                                    <h4 class="fw-normal">Jennifer Armentrout</h4>
+                                    <p>AR$ <span class="fw-bold">14.700,00</span></p>
                                     <p><a class="btn rounded-4" href="#">Ver más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/el_camino_del_duelo.jpg"
+                                    <img src="./ASSESTS/images/medicina/el_camino_del_duelo.jpg"
                                         alt="El camino del Duelo - Miguel Ruiza y Barbara Emrys" width="150"
                                         height="210" class="img-top align-self-center">
                                     <h3 class="fw-normal">EL CAMINO DEL DUELO</h3>
@@ -369,7 +374,7 @@
                                     <p><a class="btn rounded-4" href="#">Ver más »</a></p>
                                 </div>
                                 <div class="card col-lg-3 pt-1">
-                                    <img src="./ASSESTS/images/el_precio_de_la_pasion.jpg"
+                                    <img src="./ASSESTS/images/medicina/el_precio_de_la_pasion.jpg"
                                         alt="El Precio de la Pasión - Gabriel Rolón" width="150" height="210"
                                         class="img-top align-self-center">
                                     <h3 class="fw-normal card-title">EL PRECIO DE LA PASIÓN</h3>
@@ -381,13 +386,11 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselLibros" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark rounded-5" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselLibros" data-bs-slide="next">
                     <span class="carousel-control-next-icon bg-dark rounded-5" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
                 </button>
             </article>
             <hr>
@@ -397,18 +400,15 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8 col-lg-6 text-center">
                             <div>
-                                <h3 class="m-4 fs-5 font-weight-normal text-uppercase home-newstetter-title">
-                                    Newsletter</h3>
+                                <h3 class="m-4 fs-5 font-weight-normal text-uppercase home-newstetter-title">Newsletter</h3>
                                 <h2 class="h1 mb-4 home-newstetter-title">Recibí todas las ofertas</h2>
-                                <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya
-                                    mismo y comenzá a disfrutarlas!</p>
+                                <p>¿Quieres recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!</p>
                                 <form class="my-5" action="#">
-                                    <div>
                                         <div class="form-group d-flex flex-row">
                                             <input type="email" id="email"
                                                 class=" form-control form-control-big me-2 ps-4 rounded-pill"
-                                                autocorrect="off" autocapitalize="off" name="email" placeholder="Email"
-                                                aria-label="Email">
+                                                autocorrect="off" autocapitalize="off" autocomplete="off" name="email" placeholder="Email"
+                                                aria-label="Email" required>
                                             <button class="btn btn-newslatter rounded-5">Enviar</button>
                                         </div>
                                 </form>
@@ -426,15 +426,13 @@
                             <div class="text-dark mb-0 d-flex flex-row align-items-center justify-content-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                                     class="bi bi-instagram me-2" viewBox="0 0 16 16">
-                                    <path
-                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                 </svg>
                                 <h2 class="mb-0">paginas_que_vuelan</h2>
                             </div>
                             <div class="text-dark">
                                 <h5 class="font-weight-normal mb-3">Estamos en Instagram</h5>
-                                <a href="https://www.instragram.com/"><button
-                                        class="btn btn-instafeed rounded-4">Seguinos</button></a>
+                                <a href="https://www.instragram.com/"><button class="btn btn-instafeed rounded-4">Seguinos</button></a>
                             </div>
                         </div>
                     </div>
@@ -535,7 +533,7 @@
                 <!-- Metodos de Pago -->
                 <div class="row mb-4">
                     <div class="col-md-4">
-                        <h4 class="fs-3">Metodos de pago</h4>
+                        <h4 class="fs-3">Métodos de pago</h4>
                     </div>
                     <div class="col-md-8">
                         <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
@@ -600,7 +598,7 @@
                 <!-- Metodos de envío -->
                 <div class="row mb-4">
                     <div class="col-md-4">
-                        <h4 class="fs-3">Metodos de envío</h4>
+                        <h4 class="fs-3">Métodos de envío</h4>
                     </div>
                     <div class="col-md-8">
                         <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/2682@2x.png"
